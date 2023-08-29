@@ -46,3 +46,18 @@ export interface SearchManuFacturerProps {
   manufacturer: string;
   setManuFacturer: (manufacturer: string) => void;
 }
+
+export interface OptionProps{
+  title:string;
+  value:string;
+}
+
+export interface CustomFilterProps{
+  title:string;
+  options:OptionProps[];
+}
+
+export interface ShowMoreProps {
+  pageNumber:number;
+  isNext:boolean;
+}
